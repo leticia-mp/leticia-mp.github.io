@@ -1,0 +1,463 @@
+
+     /*css for webpage*/
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+h1 {
+    font-weight: 200;
+    font-style: Stencil Std, fantasy;
+    color: darkblue;
+    font-size: 500%;
+    text-align: center;
+}
+
+/*nav bar */
+
+nav {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav li::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url('img/clovericon.jpeg');
+    background-size: contain;
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.30s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*end nav bar*/
+
+/*header of all pages*/
+header {
+    border-style: double;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url('img/flowerbed.jpeg');
+    background-size: 900px 200px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    /*centers the header*/
+    width: 900px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: visible;
+    position: relative;
+}
+
+/*body background*/
+body {
+    background-image: url('img/grass.jpeg');
+    background-size: auto;
+    background-position: left;
+    background-repeat: repeat;
+
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+
+}
+
+/*homepage first box*/
+.homeone {
+    padding: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.homeone h2 
+    /* CSS styles for the heading */
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.homeone p {
+    /* CSS styles for the paragraph */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+/*body - first box*/
+.homesecondbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.homeimagesbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 800px;
+    /* width of box */
+    height: 800px;
+    /* height of box */
+    max-width: 100%;
+    margin: 0 auto;
+    /*centers the image box*/
+}
+
+.image-box {
+    position: relative;
+    width: calc(50% - 40px);
+    height: calc(50% - 40px);
+    margin: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageonetext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.imageonetext {
+    color: #fff;
+    font-size: 24px;
+    /* Additional styling properties for the text */
+}
+
+.homeimagesbox::before,
+.homeimagesbox::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    height: 0;
+}
+
+
+
+
+/*changes of media for box images size*/
+
+/* about page------- entire box*/
+.aboutbodybox {}
+
+/*about first box*/
+.aboutone {
+    text-align: center;
+    color: white;
+}
+
+.aboutone h2 {
+    /* CSS styles for the heading */
+    font-size: px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutone p {
+    /* CSS styles for the paragraph */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+
+
+.abouttwo {
+    text-align: center;
+}
+
+.abouttwo img {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 350px;
+}
+
+/*box 3-table of services listed**/
+.aboutthree table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.aboutthree th {
+    background-color: lightcyan;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+.aboutthree td {
+    padding: 20px;
+}
+
+/* box 4- two images **/
+.aboutfour {
+    display: flex;
+}
+
+.aboutfour img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+}
+
+/*box 5- youtube vids*/
+.aboutfive {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.aboutfive h2 {
+    font-weight: 200;
+    font-style: Stencil Std, fantasy;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.imagelast {
+    display: block;
+    margin-bottom: auto;
+}
+
+.lastone one {
+    text-align: center;
+    color: antiquewhite;
+}
+
+/**heading for last page*/
+.lastone h2 {
+    font-size: px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lastone p {
+    /* CSS styles for the paragraph */
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+/*flexbox for image and list*/
+.lasttwo {
+    display: flex;
+    align-items: center;
+}
+
+.lasttwo img {
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.lasttwo .lasttwocontent {
+    flex: 1;
+    font-family: Georgia, Times, serif;
+    font-size: 20px;
+    color: white;
+}
+
+.lasttwo .service-area-link {
+    margin-bottom: 10px;
+}
+
+.lasttwo ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lasttwo li {
+    margin-bottom: 5px;
+}
+
+/*form contact page*/
+.formbox {
+    font-family: Georgia, Times, serif;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+/*button for form*/
+button[type="submit"] {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    background-color: beige;
+    color: darkblue;
+    border: solid;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e5e5e5;
+}
+
+/*footer****/
+.lastbox {
+    text-align: center;
+    font-size: small;
+    color: bisque;
+    font-family: Arial Narrow, sans-serif;
+    background-color: green;
+    border: none;
+}
+
+/*for iphone 12pro -----*/
+@media (max-width:390px) {
+    header{
+        width: 100%;
+        background-size: 100% auto;
+    } 
+    
+    .wrapper {/*for iphone 12pro*/
+     display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+     header{
+        width: 100%;
+        background-size: 100% auto;
+         display: flex;
+         justify-content: center;
+    align-items: center;
+    } 
+.homeimagesbox {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
+
+  .abouttwo img {
+    width:100%;/*for image to reach screen*/
+    height: auto;
+  }
+
+    .aboutfive {
+        align-items: center;
+    } /*for videos to be centered*/
+    .lasttwo {
+        width: 100%;
+    height: auto;
+    }
+.formbox {
+  /* Add additional styles as needed */
+  max-width: 390px;
+}
+
+/* Add the following styles to center the header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add the following styles to center the navigation */
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* Add the following styles to center the footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
